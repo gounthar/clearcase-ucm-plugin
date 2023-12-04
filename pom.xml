@@ -51,6 +51,13 @@
             <groupId>org.jenkins-ci.plugins</groupId>
             <artifactId>compatibility-action-storage</artifactId>
             <version>1.0</version>
+            <exclusions>
+                <exclusion>
+                    <!-- brought in by io.jenkins.plugins:commons-lang3-api -->
+                    <groupId>org.apache.commons</groupId>
+                    <artifactId>commons-lang3</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
 
         <dependency>
@@ -83,6 +90,11 @@
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.jenkins.plugins</groupId>
+            <artifactId>commons-lang3-api</artifactId>
+            <version>3.12.0-36.vd97de6465d5b_</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
