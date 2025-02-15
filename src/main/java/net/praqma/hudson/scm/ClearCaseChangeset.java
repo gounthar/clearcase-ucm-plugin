@@ -1,6 +1,6 @@
 package net.praqma.hudson.scm;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.io.Serializable;
 import java.util.ArrayList;

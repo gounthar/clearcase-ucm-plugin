@@ -5,7 +5,7 @@
  */
 package net.praqma.hudson.remoting;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.FilePath;
 import hudson.remoting.VirtualChannel;
 import java.io.File;

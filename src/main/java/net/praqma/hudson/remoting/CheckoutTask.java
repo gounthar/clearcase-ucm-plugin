@@ -7,7 +7,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.logging.Logger;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import net.praqma.clearcase.exceptions.ClearCaseException;
 import net.praqma.clearcase.exceptions.RebaseException;
 import net.praqma.clearcase.ucm.entities.Baseline;
@@ -21,7 +21,8 @@ import net.praqma.clearcase.ucm.utils.filters.BeforeBaseline;
 import net.praqma.clearcase.ucm.view.SnapshotView;
 import net.praqma.clearcase.ucm.view.SnapshotView.Components;
 import net.praqma.clearcase.util.ExceptionUtils;
-import net.praqma.hudson.*;
+import net.praqma.hudson.Config;
+import net.praqma.hudson.Util;
 import net.praqma.hudson.exception.ScmException;
 import net.praqma.hudson.exception.UnableToInitializeWorkspaceException;
 

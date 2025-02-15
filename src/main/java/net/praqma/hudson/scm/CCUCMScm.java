@@ -1,12 +1,11 @@
 package net.praqma.hudson.scm;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.AbortException;
 import hudson.Extension;
 import hudson.FilePath;
 import hudson.Launcher;
 import hudson.model.*;
-import hudson.model.Cause.UserIdCause;
 import hudson.scm.ChangeLogParser;
 import hudson.scm.PollingResult;
 import hudson.scm.SCMDescriptor;
@@ -60,7 +59,6 @@ import net.praqma.hudson.scm.pollingmode.PollSubscribeMode;
 import net.praqma.hudson.scm.pollingmode.PollingMode;
 import net.praqma.util.execute.AbnormalProcessTerminationException;
 import net.praqma.util.structure.Tuple;
-import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 

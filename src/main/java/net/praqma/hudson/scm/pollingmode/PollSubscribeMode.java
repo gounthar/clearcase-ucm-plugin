@@ -5,7 +5,7 @@
  */
 package net.praqma.hudson.scm.pollingmode;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.Extension;
 import hudson.ExtensionList;
 import hudson.FilePath;

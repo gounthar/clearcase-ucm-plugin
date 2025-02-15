@@ -1,6 +1,6 @@
 package net.praqma.hudson.nametemplates;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.FilePath;
 import java.io.File;
 import net.praqma.clearcase.ucm.entities.Project;

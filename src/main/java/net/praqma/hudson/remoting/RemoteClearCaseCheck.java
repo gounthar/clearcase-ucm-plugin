@@ -1,6 +1,6 @@
 package net.praqma.hudson.remoting;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import net.praqma.clearcase.cleartool.Cleartool;
 import net.praqma.util.execute.AbnormalProcessTerminationException;
 

@@ -3,7 +3,7 @@ package net.praqma.hudson;
 import java.io.File;
 import java.util.List;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.model.AbstractBuild;
 import hudson.model.TaskListener;
 import net.praqma.clearcase.ucm.entities.*;

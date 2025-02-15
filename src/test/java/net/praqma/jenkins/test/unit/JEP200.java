@@ -1,10 +1,13 @@
 package net.praqma.jenkins.test.unit;
 
-import hudson.model.*;
-import net.praqma.clearcase.ucm.entities.*;
-import net.praqma.hudson.*;
-import org.junit.*;
-import org.jvnet.hudson.test.*;
+import hudson.model.FreeStyleBuild;
+import hudson.model.FreeStyleProject;
+import net.praqma.clearcase.ucm.entities.Component;
+import net.praqma.clearcase.ucm.entities.Stream;
+import net.praqma.hudson.CCUCMBuildAction;
+import org.junit.Rule;
+import org.junit.Test;
+import org.jvnet.hudson.test.JenkinsRule;
 
 /**
  * Created by mads on 5/23/18.

@@ -1,10 +1,7 @@
 package net.praqma.hudson.nametemplates;
 
-import edu.umd.cs.findbugs.annotations.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.FilePath;
-import hudson.remoting.VirtualChannel;
-import java.io.File;
-import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import net.praqma.hudson.CCUCMBuildAction;

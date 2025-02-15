@@ -3,12 +3,14 @@
     <parent>
         <groupId>org.jenkins-ci.plugins</groupId>
         <artifactId>plugin</artifactId>
-        <version>4.40</version>
+        <version>4.51</version>
         <relativePath />
     </parent>
 
     <properties>
-        <jenkins.version>2.332.2</jenkins.version>
+        <!-- https://www.jenkins.io/doc/developer/plugin-development/choosing-jenkins-baseline/ -->
+        <jenkins.baseline>2.346</jenkins.baseline>
+        <jenkins.version>${jenkins.baseline}.3</jenkins.version>
         <changelist>999999-SNAPSHOT</changelist>
     </properties>
 
@@ -17,6 +19,17 @@
     <name>ClearCase UCM Plugin</name>
     <url>https://plugins.jenkins.io/clearcase-ucm-plugin/</url>
     <packaging>hpi</packaging>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>io.jenkins.tools.bom</groupId>
+                <artifactId>bom-${jenkins.baseline}.x</artifactId>
+                <version>1763.v092b_8980a_f5e</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <repositories>
         <repository>
@@ -31,13 +44,6 @@
             <url>https://repo.jenkins-ci.org/public/</url>
         </pluginRepository>
     </pluginRepositories>
-
-    <developers>
-        <developer>
-            <id>MadsNielsen</id>
-            <name>man@praqma.net</name>
-        </developer>
-    </developers>
 
     <dependencies>
 
@@ -83,7 +89,6 @@
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
-            <version>2.6</version>
         </dependency>
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
