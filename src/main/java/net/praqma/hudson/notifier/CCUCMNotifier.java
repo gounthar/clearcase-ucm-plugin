@@ -7,7 +7,7 @@ import java.util.logging.Logger;
 
 import edu.umd.cs.findbugs.annotations.*;
 import hudson.AbortException;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
 import net.praqma.clearcase.ucm.entities.Baseline;
 import net.praqma.clearcase.util.ExceptionUtils;
@@ -347,7 +347,7 @@ public class CCUCMNotifier extends Notifier {
 		 * Hudson saves.
 		 */
 		@Override
-		public Notifier newInstance( StaplerRequest req, JSONObject formData ) throws FormException {
+		public Notifier newInstance( StaplerRequest2 req, JSONObject formData ) throws FormException {
 
 			save();
 

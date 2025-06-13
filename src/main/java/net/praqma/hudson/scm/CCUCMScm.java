@@ -67,7 +67,7 @@ import org.apache.commons.lang.StringUtils;
 import org.apache.commons.lang.exception.ExceptionUtils;
 import org.kohsuke.stapler.DataBoundConstructor;
 import org.kohsuke.stapler.QueryParameter;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 import org.kohsuke.stapler.export.Exported;
 
 /**
@@ -1342,7 +1342,7 @@ public class CCUCMScm extends SCM {
         }
 
         @Override
-        public boolean configure(StaplerRequest req, JSONObject json) throws FormException {
+        public boolean configure(StaplerRequest2 req, JSONObject json) throws FormException {
             try {
                 String s = json.getString("slavePolling");
                 if (s != null) {
@@ -1419,7 +1419,7 @@ public class CCUCMScm extends SCM {
         }
     
         @Override
-        public CCUCMScm newInstance(StaplerRequest req, JSONObject formData) {
+        public CCUCMScm newInstance(StaplerRequest2 req, JSONObject formData) {
             return req.bindJSON(CCUCMScm.class, formData);
         }
 

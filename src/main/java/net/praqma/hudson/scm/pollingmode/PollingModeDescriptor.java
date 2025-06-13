@@ -10,7 +10,7 @@ import hudson.util.FormValidation;
 import net.sf.json.JSONObject;
 import org.apache.commons.lang.StringUtils;
 import org.kohsuke.stapler.QueryParameter;
-import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerRequest2;
 
 /**
  *
@@ -20,7 +20,7 @@ import org.kohsuke.stapler.StaplerRequest;
 public abstract class PollingModeDescriptor<T extends PollingMode> extends Descriptor<PollingMode> {
 
     @Override
-    public PollingMode newInstance(StaplerRequest req, JSONObject formData) throws FormException {
+    public PollingMode newInstance(StaplerRequest2 req, JSONObject formData) throws FormException {
         return req.bindJSON(PollingMode.class, formData);
     }
     
